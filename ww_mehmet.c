@@ -83,7 +83,7 @@ int main(int argc, char** argv)
         newline_count = 0;
         for (buf_pos = 0; buf_pos < bytes; buf_pos++) {
 
-            if (buf[buf_pos] = '\n') {
+            if (buf[buf_pos] == '\n') {
                 newline_count++;
                 if (newline_count > 1) {                            // if we have a paragraph
                     printf("%s",crnt);

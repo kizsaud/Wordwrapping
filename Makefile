@@ -1,9 +1,9 @@
-CC = gcc 
+CC = gcc
 CFLAGS = -g -Wall -fsanitize=address,undefined
 
-all:ww_mehmet
+ww_mehmet: ww_mehmet.c
+	$(CC) $(CFLAGS) -o $@ $^
 
-%.o: %.c 
-    $(CC) $(CFLAGS) -o $^
-
+%.o: %.c
+	$(CC) $(CFLAGS) -c $^
 
